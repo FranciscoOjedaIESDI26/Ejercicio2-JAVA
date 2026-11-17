@@ -14,7 +14,12 @@ public class Principal {
         Libro3.paginas = 200;
 
         Libro1.MostrarDatos();
+        System.out.println("Es largo? " + Libro1.esLargo());
         Libro2.MostrarDatos();
+        System.out.println("Es largo? " + Libro2.esLargo());
         Libro3.MostrarDatos();
+        System.out.println("Es largo? " + Libro3.esLargo());
+
+    
     }
 }
