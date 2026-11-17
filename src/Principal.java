@@ -1,25 +1,27 @@
 public class Principal {
     public static void main(String[] args){
-        Libro Libro1 = new Libro();
-        Libro Libro2 = new Libro();
-        Libro Libro3 = new Libro();
+        Libro[] biblioteca = new Libro[3];
+        biblioteca[0] = new Libro();
+        biblioteca[1] = new Libro();
+        biblioteca[2] = new Libro();
 
-        Libro1.titulo = "Harry Potter";
-        Libro1.paginas = 600;
+        biblioteca[0].titulo = "Harry Potter";
+        biblioteca[0].paginas = 600;
 
-        Libro2.titulo = "Las Cronicas de Narnia";
-        Libro2.paginas = 1000;
+        biblioteca[1].titulo = "Las Cronicas de Narnia";
+        biblioteca[1].paginas = 1000;
 
-        Libro3.titulo = "El Principito";
-        Libro3.paginas = 200;
+        biblioteca[2].titulo = "El Principito";
+        biblioteca[2].paginas = 200;
 
-        Libro1.MostrarDatos();
-        System.out.println("Es largo? " + Libro1.esLargo());
-        Libro2.MostrarDatos();
-        System.out.println("Es largo? " + Libro2.esLargo());
-        Libro3.MostrarDatos();
-        System.out.println("Es largo? " + Libro3.esLargo());
-
+        for(int i = 0; i < biblioteca.length; i++) {
+            biblioteca[i].MostrarDatos();
+            if(biblioteca[i].esLargo()) {
+                System.out.println("El libro es largo");
+            } else {
+                System.out.println("El libro es corto");
+            }
+        }
     
     }
 }

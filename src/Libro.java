@@ -3,10 +3,8 @@ public class Libro {
     int paginas;
     
     void MostrarDatos() {
-        System.out.println(titulo);
-        System.out.println(paginas);
+        System.out.println("Titulo: " + titulo + ", Paginas: " + paginas);
     }
-
     boolean esLargo() {
         if(paginas > 300) {
             return true;
@@ -15,3 +13,6 @@ public class Libro {
         }
     }
 }
+
+    
+
